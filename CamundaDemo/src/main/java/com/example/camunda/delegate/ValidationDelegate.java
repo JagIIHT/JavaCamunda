@@ -10,7 +10,8 @@ public class ValidationDelegate implements JavaDelegate {
 	@Override
 	public void execute(DelegateExecution execution) throws Exception {
 
-		String status = (String) execution.getVariable("AppStatus");
+//		String status = (String) execution.getVariable("AppStatus");
+		String status = "";
 		execution.setVariable("AppStatus", status + " - Validation Completed");
 		
 	}
